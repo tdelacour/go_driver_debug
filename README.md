@@ -14,7 +14,7 @@ against an auth-enabled mongod.
 - NOTE: default hostname/port will be `<os.Hostname()>:27500`
 
 ## Repro steps
-- Start a mongod with version `3.6.x` 
+- Start a mongod with version `3.6.x` with auth enabled
 - Set the go driver version to `1.0.1` by running `go get go.mongodb.org/mongo-driver@v1.0.1`
 - Build and run the POC against your mongod (see above)
 - Observe a large printout of all the available commands on that mongod instance
